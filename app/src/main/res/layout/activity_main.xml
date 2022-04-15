@@ -15,35 +15,47 @@
         android:gravity="center" />
 
     <Button
+        android:id="@+id/btnAttachments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="파일 고르기"
-        android:onClick="onClickAttachments"
-        android:id="@+id/btnAttachments"
         android:layout_below="@id/tvAttachments"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="15dp"
         android:backgroundTint="#FCE4EC"
+        android:onClick="onClickAttachments"
+        android:text="파일 고르기"
         android:textColor="@color/black" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="선택 이미지 이메일 전송"
-        android:backgroundTint="#F9FBE7"
-        android:textColor="@color/black"
-        android:id="@+id/btnSendEmail"
-        android:onClick="onClickSendEmail"
+        android:text="이미지 저장"
         android:layout_toRightOf="@id/btnAttachments"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#E8F5E9"
         android:layout_alignBaseline="@id/btnAttachments"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/black"
+        android:id="@+id/btnSaveImage"
+        android:onClick="onClickSaveImage" />
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnAttachments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btnSaveImage"
+        android:backgroundTint="#F9FBE7"
+        android:onClick="onClickSendEmail"
+        android:text="이메일 전송"
+        android:textColor="@color/black" />
 
     <ImageView
+        android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/lion"
-        android:id="@+id/iv"
         android:layout_below="@id/btnAttachments"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lion" />
 
 </RelativeLayout>
